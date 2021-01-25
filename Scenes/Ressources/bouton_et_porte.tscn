@@ -1,0 +1,89 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://Scripts/objets_en_mouvement/porte_avec_zone.gd" type="Script" id=1]
+[ext_resource path="res://Art/Res/porte_bouton/11.png" type="Texture" id=2]
+[ext_resource path="res://Art/bouton_porte.png" type="Texture" id=3]
+[ext_resource path="res://Art/Res/porte_bouton/5.png" type="Texture" id=4]
+[ext_resource path="res://Art/Res/porte_bouton/6.png" type="Texture" id=5]
+[ext_resource path="res://Art/Res/porte_bouton/9.png" type="Texture" id=6]
+[ext_resource path="res://Art/Res/porte_bouton/7.png" type="Texture" id=7]
+[ext_resource path="res://Art/Res/porte_bouton/8.png" type="Texture" id=8]
+[ext_resource path="res://Art/Res/porte_bouton/12.png" type="Texture" id=9]
+[ext_resource path="res://Art/Res/porte_bouton/13.png" type="Texture" id=10]
+[ext_resource path="res://Art/Res/porte_bouton/10.png" type="Texture" id=11]
+[ext_resource path="res://Art/Res/porte_bouton/14.png" type="Texture" id=12]
+[ext_resource path="res://Art/Res/porte_bouton/15.png" type="Texture" id=13]
+[ext_resource path="res://Art/Res/porte_bouton/18.png" type="Texture" id=14]
+[ext_resource path="res://Art/Res/porte_bouton/22.png" type="Texture" id=15]
+[ext_resource path="res://Art/Res/porte_bouton/27.png" type="Texture" id=16]
+[ext_resource path="res://Art/Res/porte_bouton/20.png" type="Texture" id=17]
+[ext_resource path="res://Art/Res/porte_bouton/23.png" type="Texture" id=18]
+[ext_resource path="res://Art/Res/porte_bouton/25.png" type="Texture" id=19]
+[ext_resource path="res://Art/Res/porte_bouton/26.png" type="Texture" id=20]
+[ext_resource path="res://Art/Res/porte_bouton/3.png" type="Texture" id=21]
+[ext_resource path="res://Art/Res/porte_bouton/21.png" type="Texture" id=22]
+[ext_resource path="res://Art/Res/porte_bouton/1.png" type="Texture" id=23]
+[ext_resource path="res://Art/Res/porte_bouton/2.png" type="Texture" id=24]
+[ext_resource path="res://Art/Res/porte_bouton/4.png" type="Texture" id=25]
+[ext_resource path="res://Art/Res/porte_bouton/17.png" type="Texture" id=26]
+[ext_resource path="res://Art/Res/porte_bouton/24.png" type="Texture" id=27]
+[ext_resource path="res://Art/Res/porte_bouton/16.png" type="Texture" id=28]
+[ext_resource path="res://Art/Res/porte_bouton/19.png" type="Texture" id=29]
+
+
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16, 8 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 23 ), ExtResource( 24 ), ExtResource( 21 ), ExtResource( 25 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 2 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 28 ), ExtResource( 26 ), ExtResource( 14 ), ExtResource( 29 ), ExtResource( 17 ), ExtResource( 22 ), ExtResource( 15 ), ExtResource( 18 ), ExtResource( 27 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 16, 48 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 16, 2 )
+
+[node name="Porte_et_Bouton" type="Node2D"]
+
+[node name="Bouton" type="Area2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Bouton"]
+frames = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bouton"]
+shape = SubResource( 2 )
+
+[node name="Porte_bouton" type="KinematicBody2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Porte_bouton"]
+frames = SubResource( 3 )
+frame = 8
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Porte_bouton"]
+shape = SubResource( 4 )
+
+[node name="Area2D" type="Area2D" parent="Porte_bouton"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Porte_bouton/Area2D"]
+position = Vector2( 0, 49 )
+shape = SubResource( 5 )
+[connection signal="body_entered" from="Bouton" to="Porte_bouton" method="_on_zone_body_entered"]
+[connection signal="body_exited" from="Bouton" to="Porte_bouton" method="_on_zone_body_exited"]
+[connection signal="body_entered" from="Porte_bouton/Area2D" to="Porte_bouton" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Porte_bouton/Area2D" to="Porte_bouton" method="_on_Area2D_body_exited"]

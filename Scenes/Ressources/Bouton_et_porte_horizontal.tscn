@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scripts/objets_en_mouvement/Porte_avec_zone_horizontal.gd" type="Script" id=1]
+[ext_resource path="res://Art/porte2.png" type="Texture" id=2]
+[ext_resource path="res://Art/bouton_porte.png" type="Texture" id=3]
+
+
+
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16, 8 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 15, 48 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Bouton" type="Area2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Bouton"]
+frames = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bouton"]
+shape = SubResource( 2 )
+
+[node name="Porte__horizontale_bouton" type="KinematicBody2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Porte__horizontale_bouton"]
+rotation = 1.5708
+frames = SubResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Porte__horizontale_bouton"]
+rotation = 1.5708
+shape = SubResource( 4 )
+
+[node name="RayCast2D" type="RayCast2D" parent="Porte__horizontale_bouton"]
+rotation = 4.71239
+[connection signal="body_entered" from="Bouton" to="Porte__horizontale_bouton" method="_on_Bouton_body_entered"]
+[connection signal="body_exited" from="Bouton" to="Porte__horizontale_bouton" method="_on_Bouton_body_exited"]

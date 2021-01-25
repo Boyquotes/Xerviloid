@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/UIJoueur.gd" type="Script" id=1]
+
+[node name="UIJoueur" type="HBoxContainer"]
+margin_right = 971.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Portrait0" type="TextureRect" parent="."]
+margin_bottom = 79.0
+
+[node name="Portrait1" type="TextureRect" parent="."]
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 79.0
+
+[node name="Timer" type="Timer" parent="."]
+[connection signal="gui_input" from="." to="." method="_on_UIJoueur_gui_input"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

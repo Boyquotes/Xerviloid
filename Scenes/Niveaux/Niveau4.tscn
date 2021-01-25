@@ -1,0 +1,1079 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scenes/Personnages/Joueur1_de_haut.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Art/plancher2.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Ressources/ObjetRaycast_top_view.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Ressources/porte.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Ressources/UIJoueur.tscn" type="PackedScene" id=7]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
+
+[sub_resource type="TileSet" id=6]
+0/name = "plancher2.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "plancher2.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 32, 0, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "plancher2.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 64, 0, 32, 32 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 3 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "plancher2.png 3"
+3/texture = ExtResource( 3 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 96, 0, 32, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 4 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "plancher2.png 4"
+4/texture = ExtResource( 3 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 32, 32, 32 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 5 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "plancher2.png 5"
+5/texture = ExtResource( 3 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 32, 32, 32, 32 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "plancher2.png 6"
+6/texture = ExtResource( 3 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 64, 32, 32, 32 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "plancher2.png 7"
+7/texture = ExtResource( 3 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 96, 32, 32, 32 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "plancher2.png 8"
+8/texture = ExtResource( 3 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 64, 32, 32 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "plancher2.png 9"
+9/texture = ExtResource( 3 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 32, 64, 32, 32 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "plancher2.png 10"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 64, 64, 32, 32 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "plancher2.png 11"
+11/texture = ExtResource( 3 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 96, 64, 32, 32 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Joueur1_de_haut" parent="Node" instance=ExtResource( 2 )]
+position = Vector2( 48, 64 )
+collision_mask = 13
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 6 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 6, 1, 0, 7, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 12, 1, 0, 13, 1, 0, 14, 1, 0, 15, 1, 0, 16, 1, 0, 17, 1, 0, 18, 1, 0, 19, 1, 0, 20, 1, 0, 21, 1, 0, 22, 1, 0, 23, 1, 0, 24, 1, 0, 25, 1, 0, 26, 1, 0, 27, 1, 0, 28, 1, 0, 65536, 1, 0, 65564, 1, 0, 131072, 1, 0, 131100, 1, 0, 196608, 1, 0, 196636, 1, 0, 262144, 1, 0, 262172, 1, 0, 327680, 1, 0, 327708, 1, 0, 393216, 1, 0, 393244, 1, 0, 458752, 1, 0, 458780, 1, 0, 524288, 1, 0, 524316, 1, 0, 589824, 1, 0, 589852, 1, 0, 655360, 1, 0, 655388, 1, 0, 720896, 1, 0, 720924, 1, 0, 786432, 1, 0, 786460, 1, 0, 851968, 1, 0, 851996, 1, 0, 917504, 1, 0, 917532, 1, 0, 983040, 1, 0, 983068, 1, 0, 1048576, 1, 0, 1048577, 1, 0, 1048578, 1, 0, 1048579, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048586, 1, 0, 1048587, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048590, 1, 0, 1048591, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1048594, 1, 0, 1048595, 1, 0, 1048596, 1, 0, 1048597, 1, 0, 1048598, 1, 0, 1048599, 1, 0, 1048600, 1, 0, 1048601, 1, 0, 1048602, 1, 0, 1048603, 1, 0, 1048604, 1, 0 )
+
+[node name="Node2D5" type="Node2D" parent="."]
+position = Vector2( 736, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D5" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D6" type="Node2D" parent="."]
+position = Vector2( 768, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D6" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D7" type="Node2D" parent="."]
+position = Vector2( 800, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D7" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D8" type="Node2D" parent="."]
+position = Vector2( 832, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D8" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D9" type="Node2D" parent="."]
+position = Vector2( 864, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D9" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D10" type="Node2D" parent="."]
+position = Vector2( 896, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D10" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D11" type="Node2D" parent="."]
+position = Vector2( 928, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D11" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D12" type="Node2D" parent="."]
+position = Vector2( 960, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D12" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D13" type="Node2D" parent="."]
+position = Vector2( 992, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D13" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D14" type="Node2D" parent="."]
+position = Vector2( 1024, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D14" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D15" type="Node2D" parent="."]
+position = Vector2( 1056, 128 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D15" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D16" type="Node2D" parent="."]
+position = Vector2( 1088, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D16" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D17" type="Node2D" parent="."]
+position = Vector2( 1120, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D17" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D18" type="Node2D" parent="."]
+position = Vector2( 1152, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D18" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D19" type="Node2D" parent="."]
+position = Vector2( 1184, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D19" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D19" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D19" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D19" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D19" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D19" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D19" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D19" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D19" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D20" type="Node2D" parent="."]
+position = Vector2( 1216, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D20" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D20" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D20" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D20" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D20" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D20" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D20" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D20" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D20" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D21" type="Node2D" parent="."]
+position = Vector2( 1248, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D21" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D22" type="Node2D" parent="."]
+position = Vector2( 1280, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D22" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D23" type="Node2D" parent="."]
+position = Vector2( 1312, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D23" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="Node2D24" type="Node2D" parent="."]
+position = Vector2( 1344, 128 )
+
+[node name="ObjetRaycast_top_view" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, -80 )
+
+[node name="ObjetRaycast_top_view2" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, -48 )
+
+[node name="ObjetRaycast_top_view3" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, -16 )
+
+[node name="ObjetRaycast_top_view4" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 16 )
+
+[node name="ObjetRaycast_top_view5" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 48 )
+
+[node name="ObjetRaycast_top_view6" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 80 )
+
+[node name="ObjetRaycast_top_view7" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 112 )
+
+[node name="ObjetRaycast_top_view8" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 144 )
+
+[node name="ObjetRaycast_top_view9" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 176 )
+
+[node name="ObjetRaycast_top_view10" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 208 )
+
+[node name="ObjetRaycast_top_view11" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 240 )
+
+[node name="ObjetRaycast_top_view12" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 272 )
+
+[node name="ObjetRaycast_top_view13" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 304 )
+
+[node name="ObjetRaycast_top_view14" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 336 )
+
+[node name="ObjetRaycast_top_view15" parent="Node2D24" instance=ExtResource( 5 )]
+position = Vector2( -464, 368 )
+
+[node name="porte" parent="." instance=ExtResource( 6 )]
+position = Vector2( 736, 128 )
+collision_layer = 4
+pathendroit = "res://Scenes/Niveaux/niveau5.tscn"
+
+[node name="UIJoueur" parent="." instance=ExtResource( 7 )]
