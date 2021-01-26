@@ -12,5 +12,6 @@ peuvent changer entre niveaux ou dans un même niveau.
 # Contributions
 Puisque le projet n'était pas hébergé sur github avant, cette liste contient les contributions au projet qui ne sont pas listées dans
 les commits.
-Élie Bédard (ElieBedard) : Programmation de mouvement/collisions, déplacement de blocs, changement de perspective, undo, art.\n
+Élie Bédard (ElieBedard) : Programmation de mouvement/collisions, déplacement de blocs, changement de perspective, undo, art.
+
 Diego Cabas Munster (DiegoCM21) : Programmation de mouvement/collisions, changement de personnage, art.
