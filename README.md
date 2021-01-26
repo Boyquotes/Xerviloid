@@ -1,0 +1,10 @@
+# Xerviloid
+Petit jeu de puzzle 2D fait avec engin de jeu Godot
+Voici un aperçu du projet en ce moment : https://youtu.be/r_hdZq9Em_Y
+
+# Brève description
+Le concept principal du jeu est la résolution de puzzles par l'utilisation de plusieurs personnages ayant des habilités simples
+mais uniques à chacun d'eux, comme l'habilité de pousser un type spécifique de blocs ou de faire un double saut. Tous les personnages
+doivent se rendre à la porte de fin pour terminer un niveau. L'histoire du jeu est présentée principalement par l'intermédiaire
+de boîtes de dialogues entre les personnages. Le jeu possède aussi deux perspectives différentes : vu de côté et vu d'en haut, qui
+peuvent changer entre niveaux ou dans un même niveau.
